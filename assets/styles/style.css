@@ -1,0 +1,120 @@
+/* Custom Styles */
+
+/* Add your custom CSS here */
+
+/* Colors */
+:root {
+  --white: hsl(0, 100%, 100%);
+  --purple-100: hsl(275, 100%, 97%);
+  --purple-600: hsl(292, 16%, 49%);
+  --purple-950: hsl(292, 42%, 14%);
+}
+
+/* Typography */
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--white);
+  color: var(--purple-950);
+
+  background-image: url('../images/background-pattern-desktop.svg');
+  background-repeat: repeat-x;
+  background-size: contain;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  padding: 5rem 1rem;
+}
+
+/* FAQ Accordion Styles */
+.faq-accordion {
+  max-width: 650px;
+  width: 100%;
+}
+
+.faq-item {
+  background: var(--white);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.faq-question {
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.faq-question:hover {
+  background-color: var(--purple-100);
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 1.5rem;
+  color: var(--purple-600);
+}
+
+.faq-answer.active {
+  padding: 1rem;
+  display: block;
+  max-height: 300px;
+}
+
+.faq-card {
+  background: var(--white);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0px 13px 20px 6px rgba(0, 0, 0, 0.1);
+
+  min-height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.faq-title {
+  display: flex;
+  gap: 1rem;
+  font-size: 2.5rem;
+}
+
+.faq-title img {
+  width: 2rem;
+}
+
+span img {
+  max-width: unset;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url('../images/background-pattern-mobile.svg');
+    background-repeat: repeat-x;
+    align-items: flex-start;
+    padding-top: 6rem;
+  }
+
+  .faq-title {
+    font-size: 2rem;
+  }
+
+  .faq-card {
+    /* max-width: 90%; */
+    margin: 0 auto;
+    border-radius: 0.5rem;
+  }
+}
