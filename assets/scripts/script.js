@@ -10,9 +10,13 @@ document.addEventListener('DOMContentLoaded', function () {
             const icon = this.querySelector('.icon img');
             const isActive = answer.classList.contains('active');
 
-            // Close all answers
+            // Close all answers and questions
             document.querySelectorAll('.faq-answer').forEach(a => {
                 a.classList.remove('active');
+            });
+
+            document.querySelectorAll('.faq-question').forEach(q => {
+                q.classList.remove('active');
             });
 
             document.querySelectorAll('.faq-question .icon img').forEach(img => {
@@ -22,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Toggle current answer
             if (!isActive) {
                 answer.classList.add('active');
+                this.classList.add('active');
                 icon.src = './assets/images/icon-minus.svg';
             }
         });
