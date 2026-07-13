@@ -1,6 +1,6 @@
 # FAQ Accordion
 
-![FAQ Accordion Preview](./assets/images/screenshot.png)
+![FAQ Accordion Preview](./screenshot.png)
 
 A responsive FAQ (Frequently Asked Questions) accordion component built with HTML, CSS, and JavaScript. This project is a solution to the Frontend Mentor challenge.
 
@@ -12,7 +12,6 @@ You can view the live project by opening `index.html` in your browser, or visit 
 
 - **Responsive Design**: Adapts seamlessly from desktop to mobile devices
 - **Interactive Accordion**: Click on any question to expand/collapse the answer
-- **Smooth Animations**: CSS transitions for a polished user experience
 - **Accessible**: Semantic HTML structure with proper focus states
 - **Modern Styling**: Clean, modern design with CSS custom properties
 
@@ -23,7 +22,6 @@ You can view the live project by opening `index.html` in your browser, or visit 
   - Custom properties (CSS variables) for theming
   - Flexbox for layout
   - Media queries for responsive design
-  - CSS transitions for animations
 - **JavaScript**: Vanilla JS for accordion functionality
 - **Google Fonts**: Work Sans font family
 
@@ -68,12 +66,7 @@ The accordion uses event delegation to handle clicks on FAQ questions:
 1. When a question is clicked, all other answers are closed
 2. The clicked question's answer is toggled open/closed
 3. The icon changes from plus to minus (and vice versa) to indicate state
-4. CSS classes control the visibility and animation of answers
-
-### CSS Animations
-- **Icon rotation**: 180-degree rotation when active
-- **Answer expansion**: Smooth `max-height` and `opacity` transitions
-- **Hover effects**: Background color changes on question hover
+4. CSS classes control the visibility of answers
 
 ## 📱 Responsive Behavior
 
@@ -100,7 +93,3 @@ No build tools or dependencies required - it's a pure HTML/CSS/JavaScript projec
 
 - Challenge by [Frontend Mentor](https://www.frontendmentor.io)
 - Solution coded by Nara Mendes
-
-## 📄 License
-
-This project is open source and available under the MIT License.
