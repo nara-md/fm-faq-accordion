@@ -1,6 +1,6 @@
 # FAQ Accordion
 
-![FAQ Accordion Preview](./screenshot.png)
+![FAQ Accordion Preview](./assets/images/screenshot.png)
 
 A responsive FAQ (Frequently Asked Questions) accordion component built with HTML, CSS, and JavaScript. This project is a solution to the Frontend Mentor challenge.
 
